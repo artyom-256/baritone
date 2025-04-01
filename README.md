@@ -142,3 +142,10 @@ We thank them for granting Baritone an OSS license so that we can make our softw
 ## Why is it called Baritone?
 
 It's named for FitMC's deep sultry voice.
+
+## How to build and install?
+Windows:
+- Download and install JDK from https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html
+- Execute gradlew.bat
+- Copy both api and standalone jars to the Minecraft mods folder
+If JDK is not found, use JAVA_HOME environment variable to provide path to the JDK folder.
