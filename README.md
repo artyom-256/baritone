@@ -147,5 +147,6 @@ It's named for FitMC's deep sultry voice.
 Windows:
 - Download and install JDK from https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html
 - Execute gradlew.bat
-- Copy both api and standalone jars to the Minecraft mods folder
+- Copy both api and standalone jars from dist to the Minecraft mods folder
+
 If JDK is not found, use JAVA_HOME environment variable to provide path to the JDK folder.
