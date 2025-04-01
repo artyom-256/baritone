@@ -618,8 +618,6 @@ public final class ElytraBehavior implements Helper {
             return;
         }
 
-        baritone.getLookBehavior().updateTarget(solution.rotation, false);
-
         if (!solution.solvedPitch) {
             logVerbose("no pitch solution, probably gonna crash in a few ticks LOL!!!");
             return;
@@ -760,7 +758,6 @@ public final class ElytraBehavior implements Helper {
             // TODO: Take the minimum boost time into account?
             if (!baritone.getInventoryBehavior().throwaway(true, ElytraBehavior::isBoostingFireworks) &&
                     !baritone.getInventoryBehavior().throwaway(true, ElytraBehavior::isFireworks)) {
-                logDirect("no fireworks");
                 return;
             }
             logVerbose("attempting to use firework" + (forceUseFirework ? " (forced)" : ""));
